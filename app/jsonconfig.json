@@ -1,0 +1,10 @@
+{
+    "CompilerOptions":{
+        "target":"es2015",
+        "experimentalDecorators":true
+    },
+    "exclude":[
+        "node_module",
+        "dist"
+    ]
+}
