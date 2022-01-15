@@ -6,9 +6,3 @@ export default class ItemRoute extends Route {
     return item_id;
   }
 }
-/*
-    model1(p){
-        const {id}=p;
-        return id;
-    }
-    */
