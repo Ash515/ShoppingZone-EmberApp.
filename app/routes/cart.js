@@ -5,5 +5,4 @@ export default class CartRoute extends Route {
     const items = [{ price: 10 }, { price: 15 }];
     return items;
   }
-
 }
