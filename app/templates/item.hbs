@@ -2,12 +2,13 @@
 <GeneralContainer>
     <div class="product item-details-page"> {{!--product and item-details page are diff clases--}}
 <Product::Image @src={{this.productimage}}/>
-<Product::Details @color={{this.color}} @onChangeColor={{this.onChangeColor}}/>
+<Product::Details
+@colors={{this.model.colors}} @color={{this.color}} @onChangeColor={{this.onChangeColor}}/>
     </div>
     <h5 class="mt-5">Features</h5>
   <ul>
     {{#each this.model.features as |feature|}}
-    <li>feature</li>
+    <li>{{feature}}</li>
     {{/each}}
   </ul>
 </GeneralContainer>

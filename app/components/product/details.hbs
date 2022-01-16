@@ -19,12 +19,13 @@
 <div>
     <h5>Color</h5>
     <div class="product-colors active-{{@color}}">
-      <span class="product-color color-red"
-        {{on "click" (fn @onChangeColor "red")}}>
+  {{#each @colors as |colorinfo| }}
+      <span class="product-color {{concat 'color-'colorinfo.color}}"
+        {{on "click" (fn @onChangeColor colorinfo.color)}}>
         </span>
-      <span class="product-color color-black"
-        {{on "click" (fn @onChangeColor "black")}}>
-        </span>
+
+  {{/each}}
+      
     </div>
   </div>
 </div> 

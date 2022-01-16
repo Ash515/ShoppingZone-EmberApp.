@@ -27,7 +27,7 @@ export const products = [{
   },
   {
     "id": "2",
-    "name": "Nike Aire Force 1",
+    "name": "Mouse",
     "description": "Debuting in 1982, the AF1 was the first basketball shoe to house Nike Air, revolutionizing the game while rapidly gaining traction around the world.",
     "price": {
       "original": 109.95,
@@ -40,7 +40,11 @@ export const products = [{
     ],
     "colors": [{
       "color": "white",
-      "image": "/assets/images/nike-af1-white.png"
+      "image": "/assets/images/mouse-white.png"
+    },
+    {
+      "color": "black",
+      "image": "/assets/images/mouse-black.png"
     }]
   }
 ];
