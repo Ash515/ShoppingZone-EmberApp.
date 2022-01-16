@@ -1,6 +1,6 @@
 export const products = [{
     "id": "1",
-    "name": "Beats Solo Wireless Headphones",
+    "name": "Ear Pods",
     "description": "With up to 40 hours of battery life, Beats Solo Wireless is your perfect everyday headphone",
     "price": {
       "original": 199.95,

@@ -3,6 +3,8 @@
     <div class="product item-details-page"> {{!--product and item-details page are diff clases--}}
 <Product::Image @src={{this.productimage}}/>
 <Product::Details
+@name={this.model.name}
+@price={this.model.price}
 @colors={{this.model.colors}} @color={{this.color}} @onChangeColor={{this.onChangeColor}}/>
     </div>
     <h5 class="mt-5">Features</h5>
