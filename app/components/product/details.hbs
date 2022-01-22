@@ -1,33 +1,38 @@
-<div class="product-details">
-{{!--Header--}}
-<section>
+<div class='product-details'>
+  {{!Header}}
+  <section>
     <h3>{{@name}}</h3>
-    <div class="text-warning">
-        <i class="fa fa-star"></i>
-        <i class="fa fa-star"></i>
-        <i class="fa fa-star"></i>
-        <i class="fa fa-star"></i>
-        <i class="fa fa-star-half-o"></i>
+    <div class='text-warning'>
+      <i class='fa fa-star'></i>
+      <i class='fa fa-star'></i>
+      <i class='fa fa-star'></i>
+      <i class='fa fa-star'></i>
+      <i class='fa fa-star-half-o'></i>
     </div>
-</section>
-{{!--Price section--}}
-<section class={{unless @isDetails 'h4'}}>
-    <del class="small text-50">{{currency @price.original sign="$"}}</del>
-    <i class="text-danger font-weight-bold">{{currency @price.current sign="$"}}</i>
-</section>
+  </section>
+  {{!Price section}}
+  <section class={{unless @isDetails 'h4'}}>
+    <del class='small text-50'>{{currency @price.original sign='$'}}</del>
+    <i class='text-danger font-weight-bold'>{{currency
+        @price.current
+        sign='$'
+      }}</i>
+  </section>
 
-{{#if @isDetails}}
-<div>
-    <h5>Color</h5>
-    <div class="product-colors active-{{@color}}">
-  {{#each @colors as |colorinfo| }}
-      <span class="product-color {{concat 'color-'colorinfo.color}}"
-        {{on "click" (fn @onChangeColor colorinfo.color)}}>
-        </span>
+  {{#if @isDetails}}
+    <div>
+      <h5>Color</h5>
+      <div class='product-colors active-{{@color}}'>
+        {{#each @colors as |colorinfo|}}
+          <span
+            class='product-color {{concat "color-" colorinfo.color}}'
+            {{on 'click' (fn @onChangeColor colorinfo.color)}}
+          >
+          </span>
 
-  {{/each}}
-      
+        {{/each}}
+
+      </div>
     </div>
-  </div>
   {{/if}}
-</div> 
+</div>
