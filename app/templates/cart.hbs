@@ -13,15 +13,15 @@
         <div class="row"> {{!-- row and col are inbuild classes in bootstrap--}}
 
             <span class="col">Sub Total</span>
-            <span class="col">{{this.subtotal}}</span>
+            <span class="col">{{currency this.subtotal sign="$"}}</span>
         </div>
-        <div class="row">
+        <div class="row"> 
             <span class="col">Tax</span>
-            <span class="col">{{this.tax}}</span>
+            <span class="col">{{currency this.tax sign="$"}}</span>
         </div>
         <div class="row">
             <span class="col">Total</span>
-            <span class="col">{{this.total}}</span>
+            <span class="col">{{currency this.total sign="$"}}</span>
         </div>
         </section>
         <button type="button" class="btn btn-success float-right"> {{!--btn success means it shows btn in green color likewise change--}}
