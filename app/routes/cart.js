@@ -6,4 +6,3 @@ export default class CartRoute extends Route {
     return items;
   }
 }
-   
