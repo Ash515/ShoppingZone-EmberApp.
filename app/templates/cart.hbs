@@ -1,3 +1,4 @@
+<Title></Title>
 <main class="container mt-5">
     <h1>Shopping Cart</h1>
     <ol class="breadcrumb"> {{!-- Inbuild class once anything under this class dynamically make a route UI --}}
@@ -9,7 +10,7 @@
          <li class="breadcrumb-item">Shopping Cart
         </li>
     </ol>
-    {{#each this.ShoppingCart.itemList as |item|}}
+    {{#each this.cart.itemList as |item|}}
          <div class="d-flex align-items-center">
            <h4>{{item.name}}</h4>  
          </div>
