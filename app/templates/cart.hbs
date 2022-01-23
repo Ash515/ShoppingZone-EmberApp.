@@ -1,41 +1,52 @@
-<Title></Title>
-<main class="container mt-5">
-    <h1>Shopping Cart</h1>
-    <ol class="breadcrumb"> {{!-- Inbuild class once anything under this class dynamically make a route UI --}}
-         <li class="breadcrumb-item">
-             <LinkTo @route="index">
-             Home
-             </LinkTo>
-         </li>
-         <li class="breadcrumb-item">Shopping Cart
-        </li>
-    </ol>
-    {{#each this.cart.itemList as |item|}}
-         <div class="d-flex align-items-center">
-           <h4>{{item.name}}</h4>  
-         </div>
+<Title />
+<main class='container mt-5'>
+  <h1>Shopping Cart</h1>
+  <ol class='breadcrumb'>
+    {{! Inbuild class once anything under this class dynamically make a route UI }}
+    <li class='breadcrumb-item'>
+      <LinkTo @route='index'>
+        Home
+      </LinkTo>
+    </li>
+    <li class='breadcrumb-item'>Shopping Cart
+    </li>
+  </ol>
 
+{{!-- Displays the added items--}}
 
+  {{#each this.cart.itemList as |item|}}
+    <div class='cart-item d-flex align-items-center'>
+      <div class='cart-item-thumbnail'>
+        <img src={{item.image}} alt='' />
+      </div>
+      <div class='ml-3'>
+        <h4>{{item.name}}</h4>
+        <i class='font-weight-bold'>{{currency item.price sign="$"}}</i>
+      </div>
+           <input type="number" class="ml-auto" value={{item.count}}
+           {{on "input" (fn this.updateItemCount item)}}>
+      </div>
+  {{/each}}
 
+  <section class='w-50 ml-auto text-right' mb-2>
+    <div class='row'>
+      {{! row and col are inbuild classes in bootstrap}}
 
-    {{/each}}
-    <section class="w-50 ml-auto text-right" mb-2>
-        <div class="row"> {{!-- row and col are inbuild classes in bootstrap--}}
+      <span class='col'>Sub Total</span>
+      <span class='col'>{{currency this.subtotal sign='$'}}</span>
+    </div>
+    <div class='row'>
+      <span class='col'>Tax</span>
+      <span class='col'>{{currency this.tax sign='$'}}</span>
+    </div>
+    <div class='row'>
+      <span class='col'>Total</span>
+      <span class='col'>{{currency this.total sign='$'}}</span>
+    </div>
+  </section>
+  <button type='button' class='btn btn-success float-right'>
+    {{!btn success means it shows btn in green color likewise change}}
+    Checkout
+  </button>
 
-            <span class="col">Sub Total</span>
-            <span class="col">{{currency this.subtotal sign="$"}}</span>
-        </div>
-        <div class="row"> 
-            <span class="col">Tax</span>
-            <span class="col">{{currency this.tax sign="$"}}</span>
-        </div>
-        <div class="row">
-            <span class="col">Total</span>
-            <span class="col">{{currency this.total sign="$"}}</span>
-        </div>
-        </section>
-        <button type="button" class="btn btn-success float-right"> {{!--btn success means it shows btn in green color likewise change--}}
-            Checkout
-        </button>
-   
 </main>
