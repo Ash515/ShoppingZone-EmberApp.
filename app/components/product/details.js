@@ -14,4 +14,4 @@ export default class ProductDetailsComponent extends Component {
         price: price.current,
       });
 }}
- 
+   

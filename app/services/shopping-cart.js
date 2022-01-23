@@ -14,6 +14,9 @@ class Item{
     this.price = item.price;
 }
 }
+
+
+
 export default class ShoppingCartService extends Service {
  @tracked itemList=[];
 
@@ -30,6 +33,5 @@ addItem(item){
       count: 1,
     })];
   }
-
 }
 }
