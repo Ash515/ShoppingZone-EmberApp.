@@ -10,7 +10,7 @@ export default class CartController extends Controller {
     return this.cart.itemList.reduce((accumulator, curr_item) => {
       return accumulator + curr_item.price * curr_item.count; //multipling item count also when user increaseing the item counts
     }, 0);
-  }
+  } 
   get tax() {
     return 0.08 * this.subtotal;
   }
