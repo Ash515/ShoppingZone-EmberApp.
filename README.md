@@ -12,6 +12,8 @@ An Ember JS application.
 <img src="/Output Images/img3.png" width="450px" > <img src="/Output Images/img4.png" width="450px" >
 <img src="/Output Images/img6.png" width="450px" >
 
+# Video File
+[Click here](https://youtu.be/AKb2WWujDsw)
 
 
 
