@@ -7,7 +7,8 @@ An Ember JS application.
 3. JavaScript
 
 
-# 
+# Output Files
+<img src="/Output Images/img1.png" width="450px" > <img src="/Output Images/img2.png" width="450px" >
 
 
 
