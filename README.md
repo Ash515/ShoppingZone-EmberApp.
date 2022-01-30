@@ -1,4 +1,32 @@
-# emberapp details
+# Shopping Zone Application
+An Ember JS application.
+
+# Tech Stack 
+1. Ember JS
+2. HTML/SCSS
+3. JavaScript
+
+
+# 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Emberapp details
 
 This README outlines the details of collaborating on this Ember application.
 A short introduction of this app could easily go here.
