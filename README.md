@@ -9,6 +9,8 @@ An Ember JS application.
 
 # Output Files
 <img src="/Output Images/img1.png" width="450px" > <img src="/Output Images/img2.png" width="450px" >
+<img src="/Output Images/img3.png" width="450px" > <img src="/Output Images/img4.png" width="450px" >
+<img src="/Output Images/img5.png" width="450px" > <img src="/Output Images/img6.png" width="450px" >
 
 
 
